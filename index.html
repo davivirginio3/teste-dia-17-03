@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css" <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css" <title>formulario</title>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <h1>CADASTRO</h1>
             <form>
                 <label for="name">Nome:</label>
-                <input type="text" id="name" placeholder="nome">
+                <input type="text" id="name" placeholder="nome" class="textfield">
 
 
                 <label for="colorpicker">Cor favorita</label>
@@ -30,9 +31,9 @@
 
 
                 <label for="email">E-mal</label>
-                <input type="email" id="email" placeholder="exemple@gmail.com">
+                <input type="email" id="email" placeholder="exemple@gmail.com" class="textfield">
                 <label for="confemail">Confirme seu E-mal</label>
-                <input type="email" id="confemail" placeholder="exemple@gmail.com">
+                <input type="email" id="confemail" placeholder="exemple@gmail.com" class="textfield">
 
                 <label for="doc">Faça upload do documento</label>
                 <input type="file" id="doc" accept=".pdf">
@@ -43,12 +44,12 @@
                 <input type="image">
 
                 <label for="telefone">telefone</label>
-                <input type="number" id="telefone" placeholder="(11) 12345-6789">
+                <input type="number" id="telefone" placeholder="(11) 12345-6789" class="textfield">
 
                 <label for="pass">Senha:</label>
-                <input type="password" id="pass">
+                <input type="password" id="pass" class="textfield">
                 <label for="confpass">Confirme a senha:</label>
-                <input type="password" id="confpass">
+                <input type="password" id="confpass" class="textfield">
 
                 <input type="radio" id="masc" name="sexo" value="m">
                 <label for="masc">masculino</label>
@@ -64,8 +65,12 @@
 
                 <input type="checkbox" id="agreet" value="y">
                 <label for="agree">concordo com os termos</label>
+
                 <input type="checkbox" id="agreet" value="y">
                 <label for="agree">concordo com as politicas</label>
+                
+                <input type="reset" value="limpar" class="whitebutton">
+                <button class="whitebutton" type="button">enviar</button>
             </form>
         </div>
     </div>

@@ -1,20 +1,81 @@
 *{
   box-sizing: border-box;  
 }
+@font-face {
+  font-family:montserrat;
+  src: url(montserrat.ttf);
+}
+/*edge*/
+  ::-webkit-input-placeholder{
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #88888888;
+  }
+  /*internet explorer 10-11*/
+:-ms-input-placeholder{
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #88888888;
+}
+
+/*demais navegadores*/
+::placeholder{
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #88888888;
+}
 
 .fullcenter{
     background-color: azure;
     padding: 15px;
+    display: flex;
     justify-content: center;
     align-content: center;
 }
 
-#formulario{
-   background-color: blue; 
+#formulario{ 
     width: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    align-content: center;
+    align-content: center; 
 
+} 
+
+#h1{
+  font-family:montserrat;
+  font-weight: 800;
+  font-size: 25px;
+  color: black;
+} 
+label{
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 15px;
+}
+.textfield{
+  width: 324px;
+  height: 58px;
+  background-color: #ffffffe5;
+  border: solid #767676;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0px;
+  font-family: montserrat;
+  font-weight: 700;
+  font-size: 13px;
+  color: black;
+  line-height: 19px;
+} 
+.whitebutton{
+  width: 150px;
+  height: 58px;
+  padding: 20px;
+  font-family: montserrat;
 }
